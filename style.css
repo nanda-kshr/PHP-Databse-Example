@@ -1,0 +1,287 @@
+  body{
+    background-color:#181818;
+    margin:0px;
+      font-family: sans-serif;
+  }
+
+
+
+  .navbar{
+    position:fixed;
+    background-color:black;
+    width:100%;
+  }
+  .logo{
+    color:white;
+    list-style:none;
+    box-sizing:border-box;
+    margin:5px 80px;
+    text-decoration: none;
+    display: inline-block;
+    border-width:0.2px;
+    border-radius:9px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  hr{
+    margin:0px;
+  }
+  .navbar ul{
+    float:right;
+    margin-right:150px;
+    padding:auto 20px auto 20px;
+
+  }
+  .navbar ul li{
+
+    display:inline-block;
+    margin: 0 15px;
+
+  }
+  .navbar ul li a{
+
+        box-sizing:border-box;
+
+        background-color:white;
+    border: 1px solid;
+    color:black;
+    display:inline-block;
+    TEXT-DECORATION:NONE;
+
+    border-radius:6px;
+
+        -webkit-transition: .5s;
+    padding: 8px 18px;
+  }
+  .navbar ul li a:hover{
+
+    -webkit-transition: .5s;
+    border-color:white;
+    color:white;
+    background-color:black;
+  }
+  .loginBg{
+    grid-area: menu;
+    background-color:white;
+    border-radius:8px;
+    width: 100%;
+    margin-top:25%;
+    box-shadow: 10px 10px 34px black ;
+    margin-left:20%;
+    margin-bottom : 50%;
+  }
+
+  .grid{
+     display: grid;
+     grid:'menu menu right right right ';
+  }
+
+  h1{
+    text-align:center;
+  }
+
+  #checkbox{
+    display: none;
+  }
+
+  .descBg{
+
+    padding-top: 3%;
+    padding-bottom:3%;
+    grid-area:right;
+    margin-left: 65%;
+    margin-right: 10%;
+    width: 80%;
+    background-color:white;
+    margin-top: 30%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 34px black;
+  }
+
+  input[type=text], select {
+          width: 70%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          box-shadow: 3px 3px 10px black;
+          border-color: black;
+        }
+
+  label {
+          display: inline-block;
+          width: 20%;
+          height:4%;
+          padding-top: 2%;
+          text-align: center;
+        }
+
+a:visited {
+  color: green;
+}
+
+a:active {
+  color: blue;
+}
+  .loginBg button{
+    width:50%;
+    height: 45%;padding: 10px 32px;
+    display: inline-block;
+    margin-left: 25%;
+    margin-top:30px;
+    border-radius:8px;
+    border-color: black;
+    background-color:white;
+  }
+
+  .loginBg button:hover{
+    background-color:black;
+    color:white;
+    transition:.5s;
+    box-shadow: 5px 5px 22px black;
+  }
+  li{
+    margin-top:3%;
+  }
+
+  .menuBtn{
+    display:none;
+  }
+  @media screen and (max-width: 768px){
+
+    .loginBg{
+
+    }
+    .menuBtn{
+      color:black;
+      position:absolute;
+      background-color:white;
+      box-sizing:border-box;
+      border-radius:5px;
+      border: 1px solid;
+      border-color:black;
+      margin-right:20px;
+      margin-top:10px;
+      padding-top: 10px 20px;
+      display:inline-block;
+      right:10px;
+      top:20px;
+      float: right;
+      transition:.5s;
+    }
+    .menuBtn:hover .options{display: block;}
+    .menuBtn:hover{
+      background-color:black;
+      color:white;
+      transition:.5s;
+      border-color:white;
+      box-shadow: 5px 5px 22px black;
+
+      z-index: 1;
+    }
+
+    .menuBtn:hover~ul {
+    display:block;
+    }
+    #checkbox:checked~ul {
+    display:block;
+    }
+    label{
+      width:15%;
+    }
+    input[type=text], select {
+      padding: 6px 10px;
+      width:70%;
+      margin-left:10px;
+
+    }
+    .grid{
+      grid:
+            "menu"
+            "right";
+    }
+    .logo{
+      margin-left:20px;
+      margin-right: 0px;
+    }
+    .navbar ul{
+      margin-right: 0px;
+      display:none;
+    }
+
+    .navbar ul li{
+      position: absolute;
+      display:block;
+      font-size:15px;
+      margin-right: 0px;
+      float:right;
+
+    }
+    .navbar ul li a{
+      right: 30px;
+
+    }
+    .home{
+      top:210px;
+      position: absolute;
+    }
+    .howtodo{
+      top:170px;
+      position: absolute;
+    }
+    .serv{
+      top:130px;
+      position: absolute;
+    }
+    .tym{
+      top:90px;
+      position: absolute;
+    }
+    .loginBg{
+
+        margin-top:30px;
+        padding-top: 30px;
+      margin-left:15%;
+      width: 70%;
+      margin-bottom: 20px;
+    }
+    .descBg{
+      margin-top:10px;
+      margin-left:15%;
+      width: 70%;
+
+      margin-bottom: 20px;
+
+    }
+  }
+
+  .home{
+    right:400px;
+    position: absolute;
+  }
+  .howtodo{
+    right:300px;
+    position: absolute;
+  }
+  .serv{
+    right:180px;
+    position: absolute;
+  }
+  .tym{
+    right:90px;
+    position: absolute;
+  }
+.home:hover{
+  font-size:20px;
+}
+.howtodo:hover{
+  font-size:20px;
+}
+.serv:hover{
+  font-size:20px;
+}
+.tym:hover{
+  font-size:20px;
+}

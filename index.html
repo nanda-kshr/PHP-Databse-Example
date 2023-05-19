@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>php db example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<!--rgb (198,255,0) -->
+  </head>
+  <body>
+    <div class="navbar"  id="home">
+      <div class="logo">
+        <h2>GHSS KONNi</h2>
+      </div>
+
+        <input id = "checkbox" type="checkbox">
+        <div class="menuBtn">
+          <label for="checkbox">MENU</label>
+        </div>
+      <ul class="options">
+        <li><a href="#home" class="home">HOME</a> </li>
+        <li> <a href="#howtodo" class="howtodo"> About </a>   </li>
+        <li><a href="#" class="serv">  Services  </a> </li>
+        <li> <a href="#" class="tym"> time  </a> </li>
+      </ul>
+      <hr>
+    </div>
+    <div class="grid">
+      <div class="loginBg" radius="3px">
+        <center><h1>Students Details</h1>
+
+          <p><b><i>Enter Student Details<i><b></p>
+            </center>
+          <form  action=action.php method="post">
+            <div >
+              <label>Name : </label>
+              <input type="text" name= "name" class="inputs"><br>
+            </div>
+            <div >
+              <label>Age :  </label>
+              <input type="text" name= "age" class="inputs"><br>
+            </div>
+            <div >
+              <label>Address : </label>
+              <input type="text" name= "address" class="inputs"><br>
+            </div>
+            <div >
+              <label>School : </label>
+              <input type="text" name= "school" class="inputs" ><br>
+            </div>
+
+            <button type="submit" value="submit">SUBMIT</button>
+          </form><br>
+
+    </div>
+    <div class="descBg" radius="3px" id="howtodo">
+    <h1>
+      Enter Below Details In Form
+    </h1>
+    <ul type="circle">
+      <li>Name :- Your Name</li>
+      <li>Age :- Your Age</li>
+      <li>Address :- Your Permanent Address</li>
+      <li>School :- Your School Name</li>
+    </ul>
+
+    </div>
+    </div>
+
+  </body>
+</html>
